@@ -99,6 +99,16 @@ public class Usuario {
 		this.email = email;
 		this.password = password;
 	}
+
+	public Usuario(Integer id) {
+		super();
+		this.id = id;
+	}
+
+	@Override
+	public String toString() {
+		return "Usuario [email=" + email + "]";
+	}
 	
 	
 	

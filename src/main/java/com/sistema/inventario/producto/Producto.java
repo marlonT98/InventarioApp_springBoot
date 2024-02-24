@@ -24,7 +24,8 @@ public class Producto {
 
 	@Column(length = 128, nullable = false, unique = true)
 	private String nombre;
-
+	
+	
 	private float precio;
 
 	// hara una relacion de muchos a uno
@@ -115,5 +116,17 @@ public class Producto {
 		this.detalles.add(new ProductoDetalles(nombre, valor, this));
 
 	}
+
+	public Producto(Integer id) {
+		super();
+		this.id = id;
+	}
+
+	@Override
+	public String toString() {
+		return "Producto [nombre=" + nombre + "]";
+	}
+	
+	
 
 }
